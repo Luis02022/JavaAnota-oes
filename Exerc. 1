@@ -1,0 +1,42 @@
+
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ */
+
+package com.mycompany.exercicio02;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author aluno.den
+ */
+public class Exercicio02 {
+
+    public static void main(String[] args) {
+    
+        Scanner teclado = new Scanner(System.in);
+        
+        System.out.println("Digite o nome do mercado:");
+        String nome = teclado.next();
+        
+        
+        System.out.println("Digite o valor da compra:");
+        float total = teclado.nextByte();
+        
+        double prestacoes = total / 5;
+        
+        
+        System.out.println("Valor Total: " + total);
+        System.out.println("Valor da parcela: " + prestacoes);
+        
+        
+        
+        
+
+
+
+
+
+    }
+}
