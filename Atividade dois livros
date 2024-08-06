@@ -1,0 +1,115 @@
+
+
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package com.mycompany.atividade_livro;
+
+/**
+ *
+ * @author aluno.den
+ */
+public class Livro {
+    private String titulo;
+    private String autor;
+    private int numero_pagina;
+    private float preco;
+
+    public Livro(String titulo, String autor, int numero_pagina, float preco) {
+        this.titulo = titulo;
+        this.autor = autor;
+        this.numero_pagina = numero_pagina;
+        this.preco = preco;
+    }
+
+    public String getTitulo() {
+        return titulo;
+    }
+
+    public void setTitulo(String titulo) {
+        this.titulo = titulo;
+    }
+
+    public String getAutor() {
+        return autor;
+    }
+
+    public void setAutor(String autor) {
+        this.autor = autor;
+    }
+
+    public int getNumero_pagina() {
+        return numero_pagina;
+    }
+
+    public void setNumero_pagina(int numero_pagina) {
+        this.numero_pagina = numero_pagina;
+    }
+
+    public float getPreco() {
+        return preco;
+    }
+
+    public void setPreco(float preco) {
+        this.preco = preco;
+    }
+    
+    
+    
+    
+    
+    
+    
+}
+
+
+
+
+
+
+
+
+__________________________________________________________________________
+
+
+
+
+
+
+
+
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ */
+
+package com.mycompany.atividade_livro;
+
+/**
+ *
+ * @author aluno.den
+ */
+public class Atividade_livro {
+
+    public static void main(String[] args) {
+       Livro livro = new Livro("Miranha", "Stan lee", 150, 18.56f);
+       
+       Livro livro2 = new Livro("RelÂmpago mcqueen", "Disney", 10, 5.60f);
+       
+        System.out.println("Nome do livro: " + livro.getTitulo()); 
+        System.out.println("Autor do livro: " + livro.getAutor());
+        System.out.println("Páginas: " + livro.getNumero_pagina());
+        System.out.println("Preço do livro: R$" + livro.getPreco());
+        
+        System.out.println("\n");
+        
+        System.out.println("Nome do livro: " + livro2.getTitulo()); 
+        System.out.println("Autor do livro: " + livro2.getAutor());
+        System.out.println("Páginas: " + livro2.getNumero_pagina());
+        System.out.println("Preço do livro: R$" + livro2.getPreco());
+        
+        
+        
+        
+    }
+}
