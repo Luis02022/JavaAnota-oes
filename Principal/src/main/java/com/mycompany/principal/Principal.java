@@ -6,11 +6,19 @@ package com.mycompany.principal;
 
 /**
  *
- * @author aluno.den
+ * @author DELL
  */
 public class Principal {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        Pet pet = new Pet("Trovão", "5", "Pitbull", "Pequeno", "Ração");
+        
+        System.out.println("\t||Pet do usuário||");
+        System.out.println("Nome: " + pet.getNome());
+        System.out.println("Idade: " + pet.getIdade() + " anos");
+        System.out.println("Raça: " + pet.getRaca());
+        System.out.println("Porte: " + pet.getPorte());
+        System.out.println("Aliemntação: " + pet.getAlimentacao());
+        
     }
 }
