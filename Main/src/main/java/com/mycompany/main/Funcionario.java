@@ -108,12 +108,13 @@ public abstract class Funcionario implements SalarioFinal{
                 "\nSalario: " + salario + 
                 "\nData de Nascimento=" + dataNascimento;
     }
-/*
+
     @Override
     public double salarioFinal() {
-        
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
-  */  
+
+
     
     
     

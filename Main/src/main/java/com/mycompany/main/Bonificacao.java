@@ -14,7 +14,6 @@ public enum Bonificacao {
     DIRETOR(0.45);
     
     private double valor;
-    private double valor2;
 
     private Bonificacao(double valor) {
         this.valor = valor;
@@ -23,6 +22,11 @@ public enum Bonificacao {
     public double getValor() {
         return valor;
     }
-    
+
+    public void setValor(double valor) {
+        this.valor = valor;
+    }
+  
+
     
 }

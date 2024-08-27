@@ -9,6 +9,7 @@ package com.mycompany.main;
  * @author aluno.den
  */
 public class Advogado extends Funcionario{
+    
     private String cab;
 
     public Advogado(String cab, String nome, String cpf, String rg, Endereco endereco, Setor setor, Sexo sexo, double salario, String dataNascimento) {
@@ -22,6 +23,11 @@ public class Advogado extends Funcionario{
 
     public void setCab(String cab) {
         this.cab = cab;
+    }
+
+    @Override
+    public double salarioFinal() {
+        
     }
     
     
