@@ -8,19 +8,29 @@ package com.mycompany.main;
  *
  * @author aluno.den
  */
-public abstract class Funcionario {
-     protected String nome;
-     protected String dataDeNascimento;
-     protected double salarioBase;
-     protected Sexo sexo;
-     protected Setor setor;
+public abstract class Funcionario implements SalarioFinal{
+    protected String nome;
+    protected String cpf;
+    protected String rg;
+    protected Endereco endereco;
+    protected Setor setor;
+    protected Sexo sexo;
+    protected double salario;
+    protected String dataNascimento;
 
-    public Funcionario(String nome, String dataDeNascimento, double salarioBase, Sexo sexo, Setor setor) {
+    public Funcionario(String nome, String cpf, String rg, Endereco endereco, Setor setor, Sexo sexo, double salario, String dataNascimento) {
         this.nome = nome;
-        this.dataDeNascimento = dataDeNascimento;
-        this.salarioBase = salarioBase;
-        this.sexo = sexo;
+        this.cpf = cpf;
+        this.rg = rg;
+        this.endereco = endereco;
         this.setor = setor;
+        this.sexo = sexo;
+        this.salario = salario;
+        this.dataNascimento = dataNascimento;
+        
+        
+        
+        
     }
 
     public String getNome() {
@@ -31,20 +41,36 @@ public abstract class Funcionario {
         this.nome = nome;
     }
 
-    public String getDataDeNascimento() {
-        return dataDeNascimento;
+    public String getCpf() {
+        return cpf;
     }
 
-    public void setDataDeNascimento(String dataDeNascimento) {
-        this.dataDeNascimento = dataDeNascimento;
+    public void setCpf(String cpf) {
+        this.cpf = cpf;
     }
 
-    public double getSalarioBase() {
-        return salarioBase;
+    public String getRg() {
+        return rg;
     }
 
-    public void setSalarioBase(double salarioBase) {
-        this.salarioBase = salarioBase;
+    public void setRg(String rg) {
+        this.rg = rg;
+    }
+
+    public Endereco getEndereco() {
+        return endereco;
+    }
+
+    public void setEndereco(Endereco endereco) {
+        this.endereco = endereco;
+    }
+
+    public Setor getSetor() {
+        return setor;
+    }
+
+    public void setSetor(Setor setor) {
+        this.setor = setor;
     }
 
     public Sexo getSexo() {
@@ -55,15 +81,40 @@ public abstract class Funcionario {
         this.sexo = sexo;
     }
 
-    public Setor getSetor() {
-        return setor;
+    public double getSalario() {
+        return salario;
     }
 
-    public void setSetor(Setor setor) {
-        this.setor = setor;
+    public void setSalario(double salario) {
+        this.salario = salario;
     }
-     
-     
-    public abstract double salarioFinal();
+
+    public String getDataNascimento() {
+        return dataNascimento;
+    }
+
+    public void setDataNascimento(String dataNascimento) {
+        this.dataNascimento = dataNascimento;
+    }
+
+    @Override
+    public String toString() {
+        return  "\nNome: " + nome + 
+                "\nCPF: " + cpf + 
+                "\nRG:" + rg + 
+                "\nEndereço" + endereco + 
+                "\nSetor: " + setor + 
+                "\nSexo: " + sexo + 
+                "\nSalario: " + salario + 
+                "\nData de Nascimento=" + dataNascimento;
+    }
+/*
+    @Override
+    public double salarioFinal() {
+        
+    }
+  */  
+    
+    
     
 }

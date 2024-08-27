@@ -9,9 +9,11 @@ package com.mycompany.main;
  * @author aluno.den
  */
 public enum Setor {
-    RECURSOS_HUMANOS("Recursos Humanos"),
-    OPERACAO("Operação"),
-    FINANCCEIRO("Financeiro");
+    ENGENHARIA("Engenharia"),
+    JURIDICO("Jurídico"),
+    RECURSOS_HUMANOS("Recurso Humanos"),
+    MARKETING("Marketing"),
+    OPERACOES("Operações");
     
     
     private String nome;
@@ -23,6 +25,5 @@ public enum Setor {
     public String getNome() {
         return nome;
     }
-    
     
 }

@@ -8,26 +8,26 @@ package com.mycompany.main;
  *
  * @author aluno.den
  */
-public enum Sexo {
-    MASCULINO( 'M', "Masculino"),
-    FEMININO('F',"Feminino");
+public enum UnidadeFederativa {
+    BAHIA(" Bahia", "BA"), 
+    SAO_PAULO("São Paulo", "SP"),
+    RIO_DE_JANEIRO("Rio de Janeiro", "RJ");
     
-    private char caractere;
     private String texto;
+    private String sigla;
 
-    private Sexo(char caractere, String texto) {
-        this.caractere = caractere;
+    private UnidadeFederativa(String texto, String sigla) {
         this.texto = texto;
-    }
-
-    public char getCaractere() {
-        return caractere;
+        this.sigla = sigla;
     }
 
     public String getTexto() {
         return texto;
     }
-    
+
+    public String getSigla() {
+        return sigla;
+    }
     
     
 }
